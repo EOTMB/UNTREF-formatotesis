@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper]{report}
+\linespread{1.3}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{fontspec}
+\setmainfont{calibri}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {imagenes/} }
+\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{biblatex}
+\addbibresource{referencias.bib}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+
+\author{Autor}
+\title{Titulo}
+\begin{document}
+\pagenumbering{gobble}
+\input{portada}
+\chapter*{Agradecimientos}
+\chapter*{Dedicatoria}
+\tableofcontents
+\listoffigures
+\listoftables
+\chapter*{Resumen}
+\chapter*{Abstract}
+\chapter{Introduccion}
+\input{capitulos/01introduccion}
+\pagenumbering{arabic}
+\chapter{Estado del Arte}
+\input{capitulos/02estadodelarte}
+
+\chapter{Marco Teorico}
+\input{capitulos/03marcoteorico}
+
+\chapter{Materiales y Metodos}
+\input{capitulos/04materialesymetodos}
+
+\chapter{Resultados y Discusiones}
+\input{capitulos/05resultadosydiscusiones}
+
+\chapter{Conclusiones}
+\input{capitulos/06conclusiones}
+
+\chapter{Trabajos Futuros}
+\input{capitulos/07trabajosfuturos}
+
+\appendix
+\chapter{}
+\input{capitulos/apendices/apendice01}
+\end{document}
