@@ -1,7 +1,7 @@
 # UNTREF - formato para tesis de grado
 Esqueleto para generar tesis de grado, respetando el formato requerido por la Universidad de Tres de Febrero.
 ## Requerimientos
-* [Latex](https://www.latex-project.org/get/)
+* [LateX](https://www.latex-project.org/get/)
 * [Git](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git)
 ## Guía de Inicio
 * Crear una cuenta en Git, crear un fork de este repositorio en esa cuenta y luego clonar en el ordenador usando `git clone`
