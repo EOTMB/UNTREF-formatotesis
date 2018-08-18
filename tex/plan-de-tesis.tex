@@ -38,46 +38,27 @@
 \addbibresource{referencias.bib}
 \usepackage{tikz}
 \usetikzlibrary{calc}
-
-
 \author{Autor}
 \title{Titulo}
 \begin{document}
+\nocite{*}
 \pagenumbering{gobble}
 \input{portada}
-\chapter*{Agradecimientos}
-\chapter*{Dedicatoria}
 \tableofcontents
-\listoffigures
-\listoftables
-\chapter*{Resumen}
-\chapter*{Abstract}
-\chapter{Introduccion}
+\section{Resumen/Abstract}
 \pagenumbering{arabic}
-\input{capitulos/01introduccion}
-
-\chapter{Estado del Arte}
-\input{capitulos/02estadodelarte}
-
-\chapter{Marco Teorico}
-\input{capitulos/03marcoteorico}
-
-\chapter{Materiales y Metodos}
-\input{capitulos/04materialesymetodos}
-
-\chapter{Resultados y Discusiones}
-\input{capitulos/05resultadosydiscusiones}
-
-\chapter{Conclusiones}
-\input{capitulos/06conclusiones}
-
-\chapter{Trabajos Futuros}
-\input{capitulos/07trabajosfuturos}
-
-\printbibliography[heading=bibintoc,title={Bibliografia}]
-
-\appendix
-\chapter{}
-\input{capitulos/apendices/apendice01}
+\section{Introduccion y Objetivos}
+\subsection{Introduccion}
+\subsection{Objetivos}
+\subsubsection{Objetivos Generales}
+\subsubsection{Objetivos Especifico}
+\section{ Estado del Arte y Marco Teorico}
+\subsection{Estado del Arte}
+\subsection{Marco Teorico}
+\section{Desarrollo de la Investigación}
+\section{Cronograma}
+\printbibliography[heading=bibintoc, 
+title={Bibliografia}
+]
 
 \end{document}
