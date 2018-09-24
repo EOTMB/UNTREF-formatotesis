@@ -8,3 +8,5 @@
 *.run.xml
 *.toc
 *.synctex.gz
+*.bbl
+*.blg
