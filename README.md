@@ -1,5 +1,5 @@
 # UNTREF - Formato para tesis de grado
-Esqueleto para generar tesis de grado, respetando el formato requerido por la Universidad de Tres de Febrero.
+Template para generar tesis de grado, respetando el formato requerido por la Universidad Nacional de Tres de Febrero.
 ## Requerimientos
 * [LateX](https://www.latex-project.org/get/)
 * [Git](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git)
