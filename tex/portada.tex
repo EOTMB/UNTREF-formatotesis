@@ -1,3 +1,4 @@
+\makeatletter
 \begin{titlepage}
 	\begin{tikzpicture}[remember picture, overlay]
   	\draw[line width = 1pt] ($(current page.north west) + (1.5cm,-2cm)$) rectangle ($(current page.south east) + (-1.5cm,2cm)$);
@@ -12,18 +13,18 @@
                
         \vspace{2cm}
         \huge
-        \textbf{Titulo \dag}
+        \textbf{\@title \dag}
         
         \vspace{1.5cm}
         \Large
-        \textbf{Autor: }
+        \textbf{Autor: \@author }
         
         \large
         \textbf{Tutor: }
         
         \vspace{2.5cm}
         
-        \textbf{(\dag) Tesis para optar por el titulo de ingeniero/a de Sonido}
+	  (\dag) Tesis para optar por el titulo de ingeniero/a de Sonido
         
         \vspace{0.8cm}
         
@@ -34,3 +35,4 @@
         
     \end{center}
 \end{titlepage}
+\makeatother
