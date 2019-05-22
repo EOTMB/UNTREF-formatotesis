@@ -4,6 +4,16 @@
 \usepackage[spanish]{babel}
 \usepackage{fontspec}
 \setmainfont{calibri}
+\usepackage{titlesec}
+\titleformat{\chapter}[block]
+  {\fontsize{16pt}{19.2pt}\selectfont\bfseries}{\thechapter.}{1em}{\MakeUppercase}
+\titlespacing*{\chapter}{0pt}{-19pt}{0pt}
+
+\titleformat{\section}[block]
+  {\fontsize{14pt}{16.8pt}\selectfont\bfseries}{\thesection.}{1em}{\MakeUppercase}
+{}
+ 
+\titlespacing{\section}{0pt}{1.5ex plus .1ex minus .2ex}{1pc}
 \usepackage{datetime}
 \newdateformat{monthyeardate}{
   \monthname[\THEMONTH]  \THEYEAR}  \makeatletter
@@ -33,6 +43,9 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \graphicspath{ {imagenes/} }
+\usepackage[font=small,justification=centering]{caption}
+\usepackage{subcaption}
+
 \usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
 \usepackage[sorting=none]{biblatex}
 \addbibresource{referencias.bib}
@@ -50,8 +63,16 @@
 \tableofcontents
 \listoffigures
 \listoftables
-\chapter*{Resumen}
-\chapter*{Abstract}
+\newpage
+\addcontentsline{toc}{chapter}{Resumen/Abstract}
+\pagenumbering{arabic}
+\begin{flushleft}
+\large\textbf{Resumen}
+\end{flushleft}
+
+\begin{flushleft}
+\large\textbf{Abstract}
+\end{flushleft}
 \chapter{Introducción}
 \pagenumbering{arabic}
 \input{capitulos/01introduccion}
